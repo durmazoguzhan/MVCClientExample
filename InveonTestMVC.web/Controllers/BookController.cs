@@ -1,7 +1,6 @@
 ﻿using InveonTestMVC.web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using static System.Reflection.Metadata.BlobBuilder;
 
 namespace InveonTestMVC.web.Controllers
 {
@@ -67,6 +66,9 @@ namespace InveonTestMVC.web.Controllers
             return View(book);
         }
 
-        // TODO : Create CreateBook method
+        public async Task<IActionResult> CreateBook()
+        {
+            return View();
+        }
     }
 }
