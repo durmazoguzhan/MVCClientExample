@@ -20,16 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xCb29rRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oguzhan/Desktop/InveonBootcamp/InveonTestMVC/InveonTestMVC.web/Views/Book/CreateBook.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGVCb29rLmNzaHRtbA==
+[C:/Users/Oguzhan/Desktop/InveonBootcamp/InveonTestMVC/InveonTestMVC.web/Views/Book/CreateBookPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGVCb29rUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oguzhan/Desktop/InveonBootcamp/InveonTestMVC/InveonTestMVC.web/Views/Book/DeleteBook.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZWxldGVCb29rLmNzaHRtbA==
+[C:/Users/Oguzhan/Desktop/InveonBootcamp/InveonTestMVC/InveonTestMVC.web/Views/Book/DeleteBookPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZWxldGVCb29rUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oguzhan/Desktop/InveonBootcamp/InveonTestMVC/InveonTestMVC.web/Views/Book/EditBook.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xFZGl0Qm9vay5jc2h0bWw=
+[C:/Users/Oguzhan/Desktop/InveonBootcamp/InveonTestMVC/InveonTestMVC.web/Views/Book/EditBookPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xFZGl0Qm9va1BhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Oguzhan/Desktop/InveonBootcamp/InveonTestMVC/InveonTestMVC.web/Views/Book/Index.cshtml]

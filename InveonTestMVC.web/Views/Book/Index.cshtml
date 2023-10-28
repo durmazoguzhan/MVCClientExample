@@ -7,7 +7,7 @@
 <h1>Books</h1>
 
 <p>
-    <a class="btn btn-outline-success" asp-action="CreateBook">Create New</a>
+    <a class="btn btn-outline-success" asp-action="CreateBookPage">Create New</a>
 </p>
 <table class="table table-responsive">
     <thead>
@@ -46,13 +46,13 @@
                     @Html.DisplayFor(modelItem => item.PageCount)
                 </td>
                 <td>
-                    <a class="btn btn-outline-primary" asp-action="EditBook" asp-route-id=@item.Id>Edit</a>
+                    <a class="btn btn-outline-primary" asp-action="EditBookPage" asp-route-id=@item.Id>Edit</a>
                 </td>
                 <td>
                     <a class="btn btn-outline-info" asp-action="BookDetails" asp-route-id=@item.Id>Details</a>
                 </td>
                 <td>
-                    <a class="btn btn-outline-danger" asp-action="DeleteBook" asp-route-id=@item.Id>Delete</a>
+                    <a class="btn btn-outline-danger" asp-action="DeleteBookPage" asp-route-id=@item.Id>Delete</a>
                 </td>
             </tr>
         }

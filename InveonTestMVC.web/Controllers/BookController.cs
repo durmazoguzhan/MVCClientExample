@@ -1,6 +1,7 @@
 ﻿using InveonTestMVC.web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace InveonTestMVC.web.Controllers
 {
@@ -22,9 +23,8 @@ namespace InveonTestMVC.web.Controllers
             return View(books);
         }
 
-        public async Task<IActionResult> EditBook(int id)
+        public async Task<IActionResult> EditBookPage(int id)
         {
-            // TODO : Edit EditBook method
             var book = new Book();
             using (var httpClient = new HttpClient())
             {
@@ -35,6 +35,18 @@ namespace InveonTestMVC.web.Controllers
                 }
             }
             return View(book);
+        }
+
+        public async Task<IActionResult> EditBook(Book book)
+        {
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.PutAsJsonAsync("https://localhost:7051/api/Book", book))
+                {
+                    Debug.WriteLine(response.StatusCode.ToString());
+                }
+            }
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> BookDetails(int id)
@@ -51,9 +63,8 @@ namespace InveonTestMVC.web.Controllers
             return View(book);
         }
 
-        public async Task<IActionResult> DeleteBook(int id)
+        public async Task<IActionResult> DeleteBookPage(int id)
         {
-            // TODO : Edit DeleteBook method
             var book = new Book();
             using (var httpClient = new HttpClient())
             {
@@ -66,9 +77,33 @@ namespace InveonTestMVC.web.Controllers
             return View(book);
         }
 
-        public async Task<IActionResult> CreateBook()
+        public async Task<IActionResult> DeleteBook(int id)
+        {
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.DeleteAsync($"https://localhost:7051/api/Book/{id}"))
+                {
+                    Debug.WriteLine(response.StatusCode.ToString() + " " + id);
+                }
+            }
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult CreateBookPage()
         {
             return View();
+        }
+
+        public async Task<IActionResult> CreateBook(Book book)
+        {
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.PostAsJsonAsync("https://localhost:7051/api/Book", book))
+                {
+                    Debug.WriteLine(response.StatusCode.ToString());
+                }
+            }
+            return RedirectToAction("Index");
         }
     }
 }
